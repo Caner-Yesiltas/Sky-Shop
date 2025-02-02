@@ -11,10 +11,24 @@ const Login = () => {
       </div>
       
       <div className='my-2'>
-        <h3 className='font-montserrat font-[600]'  >SIGN IN</h3>
+        <h3 className='font-montserrat font-[600]'  >SIGN IN ⛈️ </h3>
         <p className='font-montserrat text-labelColor text-label mt-1'   >Enter your credentials to acces your account</p>
       </div>
-      
+      <form className='flex flex-col gap-5 text-left p-3'  >
+        <div className='flex flex-col gap-2' > 
+          <label className="font-montserrat text-label text-labelColor hover:after:content-['admin@aa.com'] hover:after:text-red hover:after:pl-3 hover:cursor-pointer" htmlFor='email'  >Email</label>
+          <input className='login-input' id="email" placeholder='Enter your email' required type="email" ></input>
+        </div>
+        <div className='flex flex-col gap-2' > 
+          <label className="font-montserrat text-label text-labelColor hover:after:content-['admin'] hover:after:text-red hover:after:pl-3 hover:cursor-pointer" htmlFor='Password'  >Password</label>
+          <input className='login-input' id="password" placeholder='Enter your email' required type="password" ></input>
+        </div>
+      </form>
+      <button className='bg-main h-[2.75rem] font-montserrat text-label text-white uppercase hover:opacity-90 rounded-[.25rem] mr-3 ml-3' >Sign In</button>
+    <div  className='flex justify-center items-center gap-2 mt-2 flex-wrap' > 
+        <span className='text-label font-montserrat font-[400] text-labelColor'  >Forgot your password</span>
+        <span className='text-main text-[.875rem] font-montserrat font[500] underline ml=1'   >Reset your password</span>
+        </div>
       </div>
     </div>
   );
