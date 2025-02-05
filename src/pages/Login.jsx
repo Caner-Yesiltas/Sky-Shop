@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { authContext } from '../context/AuthProvider';
 
 const Login = () => {
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [pass, setPass] = useState('');
+  const {login} =useContext(authContext)
   
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email.toLocaleLowerCase() === 'admin@aa.com' && password === 'admin') {
+    if (email.toLocaleLowerCase() === 'admin@aa.com' && pass === 'admin') {
       console.log('Login Successfull');
+      login({email, pass});
     } else {
       alert('invalid crediantials');
     }
 
-    console.log(email, password);
   };
   return (
     <div className='loginDiv'>
@@ -65,7 +67,7 @@ const Login = () => {
               placeholder='Enter your email'
               required
               type='password'
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPass(e.target.value)}
             ></input>
           </div>
           <button className='bg-main h-[2.75rem] font-montserrat text-label text-white uppercase hover:opacity-90 rounded-[.25rem] mr-3 ml-3'>
