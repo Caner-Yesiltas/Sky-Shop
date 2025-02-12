@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from '../assets/logo3.png';
 import { closeNavbar, logoutIcon, openNavbar } from '../helper/icons';
 import { NavLink, useLocation } from 'react-router-dom';
+import { authContext } from '../context/AuthProvider';
 
 const navigation = [
   {
@@ -20,7 +21,7 @@ const navigation = [
 const Navbar = () => {
   const [show,setShow] = useState(false);
   const location = useLocation();
-
+const {logout} = useContext(authContext)
 
   return (
     <nav className='bg-navbarColor md:text-sm'>
@@ -49,7 +50,7 @@ const Navbar = () => {
             }
           </ul>
           <div className='flex-1 items-center justify-end gap-x-6 mt-6 space-y-6 md:flex md:space-y-0 md:mt-0'>
-            <NavLink className="flex items-center justify-center gap-x-1 py-2 px-4 font-medium text-gray-700 hover:bg-main hover:text-white rounded-full md:inline-flex"
+            <NavLink onClick={logout} className="flex items-center justify-center gap-x-1 py-2 px-4 font-medium text-gray-700 hover:bg-main hover:text-white rounded-full md:inline-flex"
  >Logout {logoutIcon} </NavLink>
           </div>
         </div>

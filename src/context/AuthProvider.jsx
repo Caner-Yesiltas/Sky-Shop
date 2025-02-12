@@ -17,7 +17,7 @@ const logout =() => setUser(null);
 
 
   return (
-    <authContext.Provider value={{user, login}} >
+    <authContext.Provider value={{user, login, logout}} >
         {children}
     </authContext.Provider>
   )
