@@ -1,9 +1,25 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
-  const { state } = useLocation();
-  console.log(state);
+  const navigate = useNavigate();
+  // const { state } = useLocation(); 1. way to get data from location
+  const [state, setState] = useState({})
+  const {id} = useParams();
+
+  const getDetailData = async () => {
+    try {
+      const { data } = await axios.get(`https://dummyjson.com/products/${id}`);
+      setState(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getDetailData();
+  }, []);
 
   const { title, description, category, price, images, thumbnail } = state;
   return (
@@ -19,7 +35,7 @@ const ProductDetail = () => {
               />
             </div>
             <div className='grid grid-cols-3 gap-4 row-span-1'>
-              {images.slice(0, 3).map((item, i) => (
+              {images?.slice(0, 3).map((item, i) => (
                 <div key={i}>
                   <img
                     className='h-[15vh] w-full rounded-lg'
@@ -45,10 +61,10 @@ const ProductDetail = () => {
               </div>
             </div>
             <div className='flex justify-end gap-3 mt-4'>
-              <button className='border rounded-lg bg-labelColor text-white p-2'>
+              <button onClick={()=> navigate(-1)} className='border rounded-lg bg-labelColor text-white p-2'>
                 Back
               </button>
-              <button className='border rounded-lg bg-main text-white p-2'>
+              <button onClick={()=> navigate("/dashboard")} className='border rounded-lg bg-main text-white p-2'>
                 Return to Home
               </button>
             </div>
