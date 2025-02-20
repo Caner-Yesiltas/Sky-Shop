@@ -31,9 +31,9 @@ const ProductProvider = ({children}) => {
     useEffect(() => {
       getData();
     }, [search]);
-const values = {products, loading, search, setSearch};
+
   return (
-    <ProductContext.Provider value={{values}} >
+    <ProductContext.Provider value={{products, loading, search, setSearch}} >
         {children}
     </ProductContext.Provider>
   )
