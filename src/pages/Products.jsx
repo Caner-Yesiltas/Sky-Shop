@@ -3,6 +3,7 @@ import ProductCard from '../components/ProductCard';
 import Loading from '../components/Loading';
 import SearchInput from '../components/SearchInput';
 import { useProductContext } from '../context/ProductProvider';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Products = () => {
  
@@ -25,6 +26,7 @@ const Products = () => {
         </div> 
       ) : ( <h2 className='text-center text-3xl text-red-600 mt-32'  > No Products </h2>
       )}
+      <ScrollToTop/>
     </div>
   );
 };
