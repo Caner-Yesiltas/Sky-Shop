@@ -1,16 +1,16 @@
 <div align="center">
-  <h1>🛍️ Sky Shop</h1>
+  <h1>⛈️ Sky Shop</h1>
   
   <h3>
-    👉 <a href="https://sky-shop-demo.vercel.app/">Live Demo</a> 👈
+    👉 <a href="https://sky-shop-swart.vercel.app/">Live Demo</a> 👈
   </h3>
 </div>
 
 <div align="center">
-  <img src="/api/placeholder/800/400" alt="Sky Shop Demo" width="800"/>
+  <img src="/assets/Sky-Shop.gif" alt="Sky Shop Demo" width="800"/>
 </div>
 
-## 🚀 About The Project
+## 📌 About The Project
 
 Sky Shop is a modern e-commerce management dashboard built with React and Tailwind CSS. The application features a secure authentication system with session storage, product management capabilities, and a responsive interface for managing an online store. With real-time search capabilities, context-based state management, and lazy loading for optimal performance, Sky Shop provides an excellent admin experience.
 
@@ -41,8 +41,6 @@ Sky Shop is a modern e-commerce management dashboard built with React and Tailwi
 - [DummyJSON API](https://dummyjson.com/) - For mock data
 - [Session Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) - For persistent auth
 - [React Lazy & Suspense](https://reactjs.org/docs/code-splitting.html#reactlazy) - For code splitting
-- [CSS Grid & Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS) - For layouts
-- [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API) - For navigation
 
 ## 💻 Getting Started
 
@@ -169,5 +167,5 @@ Caner Yesiltas - [caneryesiltas1@gmail.com](mailto:caneryesiltas1@gmail.com)
 Project Link: [https://github.com/Caner-Yesiltas/Sky-Shop](https://github.com/Caner-Yesiltas/Sky-Shop)
 
 <div align="center">
-  Made with 🛍️ by Caner Yesiltas
+  Made with ⛈️ by Caner Yesiltas
 </div>
