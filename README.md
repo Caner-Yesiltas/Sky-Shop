@@ -1,70 +1,173 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1>🛍️ Sky Shop</h1>
+  
+  <h3>
+    👉 <a href="https://sky-shop-demo.vercel.app/">Live Demo</a> 👈
+  </h3>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="/api/placeholder/800/400" alt="Sky Shop Demo" width="800"/>
+</div>
 
-## Available Scripts
+## 🚀 About The Project
 
-In the project directory, you can run:
+Sky Shop is a modern e-commerce management dashboard built with React and Tailwind CSS. The application features a secure authentication system with session storage, product management capabilities, and a responsive interface for managing an online store. With real-time search capabilities, context-based state management, and lazy loading for optimal performance, Sky Shop provides an excellent admin experience.
 
-### `yarn start`
+### ✨ Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔐 Secure authentication system with session storage
+- 🔍 Real-time product search functionality
+- 📱 Fully responsive Tailwind design
+- 📊 Dashboard with statistics
+- 👥 Team management page
+- 🎯 Context API for state management
+- 🛒 Product detail views with image gallery
+- 💫 Smooth page transitions
+- 🔄 Protected routes for authenticated users
+- 🚀 Lazy loading for improved performance
+- 📦 Session storage for persistent login
+- 🖼️ Lazy image loading with fallbacks
+- 🎨 Custom CSS with Tailwind utilities
+- 🔒 Private routing system
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛠️ Built With
 
-### `yarn test`
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/) - For routing and navigation
+- [Context API](https://reactjs.org/docs/context.html) - For state management
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Axios](https://axios-http.com/) - For API requests
+- [DummyJSON API](https://dummyjson.com/) - For mock data
+- [Session Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) - For persistent auth
+- [React Lazy & Suspense](https://reactjs.org/docs/code-splitting.html#reactlazy) - For code splitting
+- [CSS Grid & Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS) - For layouts
+- [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API) - For navigation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 💻 Getting Started
 
-### `yarn build`
+```bash
+# Clone the repository
+git clone https://github.com/Caner-Yesiltas/Sky-Shop
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Navigate to project directory
+cd sky-shop
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start the development server
+npm start
+```
 
-### `yarn eject`
+## 📁 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── assets/           # Images and static assets
+│   ├── logo.png
+│   ├── logo2.jpg
+│   ├── logo3.png
+│   └── scrollup.png
+├── components/       # UI components
+│   ├── Loading.jsx
+│   ├── Navbar.jsx
+│   ├── ProductCard.jsx
+│   ├── ScrollToTop.jsx
+│   ├── SearchInput.jsx
+│   ├── Stats.jsx
+│   └── Testimonial.jsx
+├── context/         # Context providers
+│   ├── AuthProvider.jsx  # Authentication context
+│   └── ProductProvider.jsx  # Products context
+├── helper/          # Utility functions and data
+│   ├── data.js     # Mock data
+│   └── icons.js    # SVG icons
+├── pages/          # Page components
+│   ├── About.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── NotFound.jsx
+│   ├── ProductDetail.jsx
+│   └── Products.jsx
+├── router/         # Routing configuration
+│   ├── AppRouter.jsx
+│   └── PrivateRouter.jsx
+└── styles/         # CSS styling
+    └── App.css     # Global styles & Tailwind
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔍 Core Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Authentication System
+- Session storage based authentication
+- Protected routes with PrivateRouter
+- User session persistence
+- Secure login/logout flow
+- Route guards for unauthorized access
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Product Management
+- Real-time search with Axios
+- Lazy loaded product images
+- Responsive product grid
+- Detailed product views
+- Image gallery with thumbnails
+- Dynamic filtering system
 
-## Learn More
+### State Management
+- Context API implementation
+- Authentication context
+- Products context with search state
+- Loading states
+- Error handling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Performance Optimizations
+- Lazy loading for routes
+- Image lazy loading
+- Code splitting
+- Session storage for persistence
+- Optimized re-renders
+- Efficient state updates
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### UI/UX Features
+- Responsive navigation
+- Search functionality
+- Loading indicators
+- Error boundaries
+- Scroll to top
+- Toast notifications
+- Testimonial carousel
+- Team member profiles
+- Statistics dashboard
 
-### Code Splitting
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Mobile-first approach
+- Responsive navigation menu
+- Flexible grid system
+- Adaptive layouts
+- Touch-friendly interface
+- Dynamic breakpoints
+- Consistent spacing
+- Responsive typography
 
-### Analyzing the Bundle Size
+## 🔒 Security Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Protected routes
+- Session storage encryption
+- Authentication guards
+- Secure routing
+- Error handling
+- Input validation
+- Route protection
+- Session management
 
-### Making a Progressive Web App
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Caner Yesiltas - [caneryesiltas1@gmail.com](mailto:caneryesiltas1@gmail.com)
 
-### Advanced Configuration
+Project Link: [https://github.com/Caner-Yesiltas/Sky-Shop](https://github.com/Caner-Yesiltas/Sky-Shop)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  Made with 🛍️ by Caner Yesiltas
+</div>
