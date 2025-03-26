@@ -1,3 +1,7 @@
+<!-- LinkedIn Preview -->
+<!-- ![Sky Shop Preview](https://github.com/Caner-Yesiltas/Sky-Shop/blob/main/assets/preview.png?raw=true) -->
+
+
 <div align="center">
   <h1>⛈️ Sky Shop</h1>
   
