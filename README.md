@@ -168,7 +168,7 @@ src/
 
 Caner Yesiltas - [caneryesiltas1@gmail.com](mailto:caneryesiltas1@gmail.com)
 
-Project Link: [https://github.com/Caner-Yesiltas/Sky-Shop](https://github.com/Caner-Yesiltas/Sky-Shop)
+Project Link: [https://sky-shop-swart.vercel.app/](https://sky-shop-swart.vercel.app/)
 
 <div align="center">
   Made with ⛈️ by Caner Yesiltas
